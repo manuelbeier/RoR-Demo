@@ -1,24 +1,50 @@
-# README
+### Ruby on Rails - Introduction Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the project that contains the files that were shown in the introductions to Ruby on Rails.
 
-Things you may want to cover:
+### Commands
 
-* Ruby version
+To create a new Ruby on Rails project:
 
-* System dependencies
+```
+rails new [name]
+```
 
-* Configuration
+To start a local server:
 
-* Database creation
+```
+rails s
+```
 
-* Database initialization
+To create a new controller:
 
-* How to run the test suite
+```
+rails g controller [name]
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+To create the database after adjusting the database settings in the configuration:
 
-* Deployment instructions
+```
+rake db:create
+```
 
-* ...
+In order to create a new database model:
+
+```
+rails g model task
+```
+
+To run all migrations:
+
+```
+rake db:migrate
+```
+
+
+
+### Presentation
+
+The presentation file can be found [here](/presentation.pptx)
+
+
+
