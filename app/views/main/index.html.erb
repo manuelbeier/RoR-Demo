@@ -1,0 +1,16 @@
+<div class="container">
+    <% @tasks.each do |t| %>
+    <div class="item">
+        <label class="material-checkbox">
+            <input type="checkbox">
+            <span><%= t.description %></span>
+        </label>
+    </div>
+    <% end %>
+
+    <div class="item">
+    <%= form_tag("/", method: "POST") do %>
+        <input type="text" placeholder="Add new task" name="new_task" autocomplete="off">
+    <% end %>
+    </div>
+</div>
